@@ -1,4 +1,4 @@
-# gin-gonic/gin's .github/workflows/gin.yml: test (os: ubuntu-latest, go: 1.27, test-tags: -race), for the Superaction scoreboard.
+# gin-gonic/gin's .github/workflows/gin.yml: test (os: ubuntu-latest, go: 1.27, test-tags: ""), for the Superaction scoreboard.
 name: Superaction (GitHub)
 
 on:
@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 30
     env:
       GO111MODULE: on
-      TESTTAGS: -race
+      TESTTAGS: ""
       GOPROXY: https://proxy.golang.org
     steps:
       - name: Checkout Code
